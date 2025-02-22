@@ -1,7 +1,13 @@
+<<<<<<< HEAD
 [![Frontend Masters](https://static.frontendmasters.com/assets/brand/logos/full.png)](https://frontendmasters.com/courses/ai-agents/)
 # Build an AI Agent from Scratch Workshop
 
 - Watch the workshop on [Frontend Masters](https://frontendmasters.com/courses/ai-agents/). 
+=======
+# Build an AI Agent from Scratch Workshop
+
+- Watch the workshop on [Frontend Masters](https://frontendmasters.com/workshops/build-ai-agent/). 
+>>>>>>> 4d8dd0533668af922824eeebeb9db085be93d47a
 - View the [course notes](https://clumsy-humor-894.notion.site/Agent-from-scratch-13554fed51a380749554c44aa8989406?pvs=4)
 
 ## Setup Instructions
@@ -32,6 +38,7 @@ Create an [API Key from OpenAI](https://platform.openai.com/settings/organizatio
 ```
 OPENAI_API_KEY='YOUR_API_KEY'
 ```
+<<<<<<< HEAD
 
 OpenAI requires you to add a minimum of $5 USD credit to your account. Go to the [billing page](https://platform.openai.com/settings/organization/billing/overview) and add credits.
 
@@ -39,3 +46,5 @@ OpenAI requires you to add a minimum of $5 USD credit to your account. Go to the
 
 > [!NOTE]  
 > It can take up to 20 minutes for the credits to be available via the API. So if you get an `insufficient_quota` error, try again in a few minutes.
+=======
+>>>>>>> 4d8dd0533668af922824eeebeb9db085be93d47a
