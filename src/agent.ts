@@ -5,6 +5,8 @@ import { runTool } from './toolRunner'
 import { addMessages, getMessages, saveToolResponse } from './memory'
 import { logMessage, showLoader } from './ui'
 
+
+
 export const runAgent = async ({
   turns = 10,
   userMessage,
@@ -21,7 +23,7 @@ export const runAgent = async ({
     },
   ])
 
-  const loader = showLoader('Thinking...')
+  const loader = showLoader('Wait on Im fucking Thinking!!...')
 
   while (true) {
     const history = await getMessages()
@@ -44,7 +46,7 @@ export const runAgent = async ({
       loader.update(`executing: ${toolCall.function.name}`)
 
       const toolResponse = await runTool(toolCall, userMessage)
-      await saveToolResponse(toolCall.id, toolResponse)
+      await saveToolResponse(toolCall.id, typeof toolResponse === 'string' ? toolResponse : JSON.stringify(toolResponse))
 
       loader.update(`executed: ${toolCall.function.name}`)
     }

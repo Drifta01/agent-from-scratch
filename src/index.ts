@@ -1,0 +1,9 @@
+import { quizQuestion, quizToolDefinition } from './tools/quizQuestion';
+// ...existing code...
+
+const tools = [
+  // ...existing tools...
+  { definition: quizToolDefinition, implementation: quizQuestion },
+];
+
+// ...existing code...
