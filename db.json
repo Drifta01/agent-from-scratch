@@ -173,6 +173,513 @@
       "refusal": null,
       "id": "14ba16be-fed1-4b86-9a0b-f66d26efcdeb",
       "createdAt": "2025-02-22T18:31:59.559Z"
+    },
+    {
+      "role": "user",
+      "content": "Hello world",
+      "id": "ac8fef39-244d-49cd-ac0b-603e7c3bb354",
+      "createdAt": "2025-07-17T00:19:23.841Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello! How can I assist you today?",
+      "refusal": null,
+      "annotations": [],
+      "id": "4179dff5-2ff2-41be-addc-e36636610a04",
+      "createdAt": "2025-07-17T00:19:25.951Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a dad joke",
+      "id": "ccb9cdfd-b320-48ed-a4a2-eba08ea342fc",
+      "createdAt": "2025-07-17T00:23:19.385Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_vJy7LMEJRl9aw7hXMsLULqFf",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "3318fed1-c687-4027-8f74-f15506952ab8",
+      "createdAt": "2025-07-17T00:23:20.761Z"
+    },
+    {
+      "role": "tool",
+      "content": "How many hipsters does it take to change a lightbulb? Oh, it's a really obscure number. You've probably never heard of it.",
+      "tool_call_id": "call_vJy7LMEJRl9aw7hXMsLULqFf",
+      "id": "24d80dd3-fc07-4b96-9d36-0aeef06b6e2e",
+      "createdAt": "2025-07-17T00:23:21.571Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a dad joke for you:\n\n**How many hipsters does it take to change a lightbulb? Oh, it's a really obscure number. You've probably never heard of it.**\n\nI hope that made you smile! Let me know if you'd like to hear another one or if there's anything else I can do for you.",
+      "refusal": null,
+      "annotations": [],
+      "id": "c436fae7-0502-4a58-9679-c04d7b6f5d51",
+      "createdAt": "2025-07-17T00:23:24.170Z"
+    },
+    {
+      "role": "user",
+      "content": "please provide an image for this joke",
+      "id": "55d0ede4-afd6-4343-9912-d863959ad5fc",
+      "createdAt": "2025-07-17T00:24:04.614Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_SyZhgD9iQ6KYG6L6arhEawIL",
+          "type": "function",
+          "function": {
+            "name": "generate_image",
+            "arguments": "{\"prompt\":\"A humorous cartoon illustration depicting a hipster trying to change a lightbulb. The hipster has a beard, wearing glasses, and is dressed in trendy, vintage clothing. He looks puzzled while holding a lightbulb, with a thought bubble that says, 'It's a really obscure number.' The background should be a cozy, hipster-style room with plants and art.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "3d485a3e-1ad9-4412-9ab8-e1038371aa31",
+      "createdAt": "2025-07-17T00:24:09.403Z"
+    },
+    {
+      "role": "tool",
+      "content": "Error executing tool generate_image: 403 Project proj_KaxhJqbhpd21HkYeNoOu4BEL does not have access to model dall-e-3.",
+      "tool_call_id": "call_SyZhgD9iQ6KYG6L6arhEawIL",
+      "id": "e9acb208-f042-4ed3-96de-3d8f6c684a80",
+      "createdAt": "2025-07-17T00:24:10.174Z"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems there was an issue generating the image for the joke. Unfortunately, I can't create the image at this moment. \n\nHowever, I can help you come up with ideas for how to visualize the joke or suggest other ways to find or create an image. Would you like to proceed with that?",
+      "refusal": null,
+      "annotations": [],
+      "id": "9e376a03-faab-4bb9-962c-c6317ca1d39e",
+      "createdAt": "2025-07-17T00:24:12.776Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a dad joke and provide an image describing the joke",
+      "id": "6b3d6b6e-8dcd-4fd2-9ec2-c6dc7e819b78",
+      "createdAt": "2025-07-17T00:25:12.705Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_GcpvXSdkpthqHH6yeNpaJf0P",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "dd0211c9-c8b2-4a78-bcf4-695938be313a",
+      "createdAt": "2025-07-17T00:25:14.533Z"
+    },
+    {
+      "role": "tool",
+      "content": "No matter how kind you are, German children are kinder.",
+      "tool_call_id": "call_GcpvXSdkpthqHH6yeNpaJf0P",
+      "id": "1f852af9-3bc7-4dcb-a56e-fdd9fcf1e1fa",
+      "createdAt": "2025-07-17T00:25:14.949Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_vHIALVG343Liq4TzQ4uZVtxq",
+          "type": "function",
+          "function": {
+            "name": "generate_image",
+            "arguments": "{\"prompt\":\"A humorous cartoon illustration depicting a friendly German child sharing toys with other children. The German child is smiling and wearing traditional clothing, while other children look surprised and happy. The background shows a playground with colorful toys and a sunny day. A speech bubble from the German child says, 'No matter how kind you are, I'm kinder!'\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "f8aa6530-7674-4918-91ae-4eed7867b2fc",
+      "createdAt": "2025-07-17T00:25:18.216Z"
+    },
+    {
+      "role": "tool",
+      "content": "Error executing tool generate_image: 403 Project proj_KaxhJqbhpd21HkYeNoOu4BEL does not have access to model dall-e-3.",
+      "tool_call_id": "call_vHIALVG343Liq4TzQ4uZVtxq",
+      "id": "2d34366a-4315-492b-89e4-41ef94e2b12c",
+      "createdAt": "2025-07-17T00:25:18.621Z"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems I'm currently unable to generate an image for the joke. However, here's the dad joke for you:\n\n**No matter how kind you are, German children are kinder.**\n\nIf you'd like, I can help you brainstorm ideas for an illustration or suggest ways to find an image that fits the joke. Let me know how you'd like to proceed!",
+      "refusal": null,
+      "annotations": [],
+      "id": "13ea1924-73f8-41fe-b5b1-a3caca751981",
+      "createdAt": "2025-07-17T00:25:20.894Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a dad joke",
+      "id": "9615afec-2c96-4c93-b189-f1b0501e1664",
+      "createdAt": "2025-07-17T00:26:01.233Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_leolV0HNRQVzSC6Sid35xvgJ",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "69897346-872c-4d2f-ae84-763b46650e7f",
+      "createdAt": "2025-07-17T00:26:03.014Z"
+    },
+    {
+      "role": "tool",
+      "content": "Why didn’t the orange win the race? It ran out of juice.",
+      "tool_call_id": "call_leolV0HNRQVzSC6Sid35xvgJ",
+      "id": "5172c86b-8581-4ccb-ade7-605bf50978ba",
+      "createdAt": "2025-07-17T00:26:03.453Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a dad joke for you:\n\n**Why didn’t the orange win the race? It ran out of juice.**\n\nI hope that brings a smile to your face! Let me know if you'd like to hear another joke or if there's anything else I can do for you.",
+      "refusal": null,
+      "annotations": [],
+      "id": "517e701f-9207-4250-bec5-f9be0d16cc19",
+      "createdAt": "2025-07-17T00:26:05.895Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a dad joke",
+      "id": "540ab14a-fa9d-41a6-81a7-dd572edb647f",
+      "createdAt": "2025-07-17T00:26:27.783Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_RsoS6xkih6EZRONcDlAv1ufW",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "36bf5fbe-dd9d-4931-8264-2d625a603a3d",
+      "createdAt": "2025-07-17T00:26:28.837Z"
+    },
+    {
+      "role": "tool",
+      "content": "How do the trees get on the internet? They log on.",
+      "tool_call_id": "call_RsoS6xkih6EZRONcDlAv1ufW",
+      "id": "16cd6201-a069-4106-85bf-42ca4ff1cc9d",
+      "createdAt": "2025-07-17T00:26:29.198Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's another dad joke for you:\n\n**How do the trees get on the internet? They log on.**\n\nI hope you enjoyed that one! Let me know if you'd like to hear more or if there's anything else I can assist you with.",
+      "refusal": null,
+      "annotations": [],
+      "id": "e05186a0-6e79-4307-b057-a97f57f3e116",
+      "createdAt": "2025-07-17T00:26:30.508Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a dad joke",
+      "id": "cfbb0900-bb91-42c6-a7c4-ca963cbb6bdc",
+      "createdAt": "2025-07-17T00:26:45.072Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_Eck2cjZaWg6pEB7z04wrkVul",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "647110bb-9c6d-4727-ab00-9f4a7edd3555",
+      "createdAt": "2025-07-17T00:26:46.881Z"
+    },
+    {
+      "role": "tool",
+      "content": "Today a man knocked on my door and asked for a small donation towards the local swimming pool. I gave him a glass of water.",
+      "tool_call_id": "call_Eck2cjZaWg6pEB7z04wrkVul",
+      "id": "e170c568-5fa5-42bd-85e7-4edf190c71d6",
+      "createdAt": "2025-07-17T00:26:47.247Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a dad joke for you:\n\n**Today a man knocked on my door and asked for a small donation towards the local swimming pool. I gave him a glass of water.**\n\nI hope that made you chuckle! Let me know if you'd like to hear more jokes or if there's anything else I can help with.",
+      "refusal": null,
+      "annotations": [],
+      "id": "0e8ecd71-4db2-49ee-a186-458d98d24f9c",
+      "createdAt": "2025-07-17T00:26:49.864Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a dad joke",
+      "id": "829d47f0-678d-4268-bb17-96da217a66df",
+      "createdAt": "2025-07-17T00:27:18.705Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_cggi4T0omwz3q6uDd6reobx6",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "aef772b2-d6f3-49e7-a00d-9374857954e1",
+      "createdAt": "2025-07-17T00:27:20.287Z"
+    },
+    {
+      "role": "tool",
+      "content": "What did the big flower say to the littler flower? Hi, bud!",
+      "tool_call_id": "call_cggi4T0omwz3q6uDd6reobx6",
+      "id": "64175c3a-fd8f-46da-8a01-fdc94fea32a0",
+      "createdAt": "2025-07-17T00:27:20.789Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a dad joke for you:\n\n**What did the big flower say to the littler flower? Hi, bud!**\n\nI hope that brought a smile to your face! Let me know if you'd like to hear more or if there's anything else I can assist you with.",
+      "refusal": null,
+      "annotations": [],
+      "id": "52529104-8adc-4ceb-b888-1dbd5ecaf616",
+      "createdAt": "2025-07-17T00:27:23.144Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a dad joke",
+      "id": "9a4c3206-57ec-444b-ac91-a67835c01651",
+      "createdAt": "2025-07-17T00:27:40.948Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_f5uxJ6piLRBY7RIaEiWKcIC2",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "24aa1d21-f5ba-476a-a76d-2903f41eb4c6",
+      "createdAt": "2025-07-17T00:27:42.176Z"
+    },
+    {
+      "role": "tool",
+      "content": "A beekeeper was indicted after he confessed to years of stealing at work. They charged him with emBEEzlement",
+      "tool_call_id": "call_f5uxJ6piLRBY7RIaEiWKcIC2",
+      "id": "8fa8ad8e-7460-438f-bdb9-cc4531e166ff",
+      "createdAt": "2025-07-17T00:27:42.696Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a dad joke for you:\n\n**A beekeeper was indicted after he confessed to years of stealing at work. They charged him with emBEEzlement.**\n\nI hope that made you laugh! Let me know if you'd like to hear more jokes or if there's anything else I can do for you.",
+      "refusal": null,
+      "annotations": [],
+      "id": "1255e32d-745b-402f-9754-1208d576fed7",
+      "createdAt": "2025-07-17T00:27:44.551Z"
+    },
+    {
+      "role": "user",
+      "content": "tell me a dad joke",
+      "id": "02bf5cf0-6a0d-4453-bbfd-7351bbfdf7e9",
+      "createdAt": "2025-07-17T00:27:59.987Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_7Q3CoQvC9611OVpnVam2pM2b",
+          "type": "function",
+          "function": {
+            "name": "dad_joke",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "89fbd05a-993f-440e-82b1-8583906d8b96",
+      "createdAt": "2025-07-17T00:28:01.149Z"
+    },
+    {
+      "role": "tool",
+      "content": "Every night at 11:11, I make a wish that someone will come fix my broken clock.",
+      "tool_call_id": "call_7Q3CoQvC9611OVpnVam2pM2b",
+      "id": "493e30f2-353b-4fa5-b03c-339890582c9b",
+      "createdAt": "2025-07-17T00:28:01.544Z"
+    },
+    {
+      "role": "assistant",
+      "content": "Here's a dad joke for you:\n\n**Every night at 11:11, I make a wish that someone will come fix my broken clock.**\n\nI hope that gave you a good laugh! Let me know if you'd like to hear more or if there's anything else I can assist you with.",
+      "refusal": null,
+      "annotations": [],
+      "id": "361a225b-36df-40ae-be31-795901676be9",
+      "createdAt": "2025-07-17T00:28:04.413Z"
+    },
+    {
+      "role": "user",
+      "content": "generate an image of a cat",
+      "id": "60a2aafa-4e93-41ad-bb87-8c73d1499701",
+      "createdAt": "2025-07-17T00:29:32.425Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_xhwnTO8gSQzd15kFH1kXVxMz",
+          "type": "function",
+          "function": {
+            "name": "generate_image",
+            "arguments": "{\"prompt\":\"A cute and playful cat sitting in a sunny garden. The cat has fluffy fur, bright eyes, and is surrounded by colorful flowers and greenery. The scene is cheerful and vibrant, capturing the essence of a happy cat enjoying a sunny day.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "f66dc7ea-5423-4b8f-9ae5-8cf5813687a2",
+      "createdAt": "2025-07-17T00:29:33.939Z"
+    },
+    {
+      "role": "tool",
+      "content": "Error executing tool generate_image: 403 Project proj_KaxhJqbhpd21HkYeNoOu4BEL does not have access to model dall-e-3.",
+      "tool_call_id": "call_xhwnTO8gSQzd15kFH1kXVxMz",
+      "id": "cbf0d865-01d8-4015-a7b4-b1ca6b8e8795",
+      "createdAt": "2025-07-17T00:29:34.386Z"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems I'm currently unable to generate an image of a cat due to a technical issue. However, I can help you with descriptions or ideas for cat images if you'd like! Alternatively, you can find many cat images online through stock photo websites or image search engines. Let me know how else I can assist you!",
+      "refusal": null,
+      "annotations": [],
+      "id": "804891e0-95f6-45c6-8f3d-fb8230a895d6",
+      "createdAt": "2025-07-17T00:29:35.548Z"
+    },
+    {
+      "role": "user",
+      "content": "generate an image of a dog",
+      "id": "6fdc7c1d-2c62-4c30-aa02-05c8ac873e3b",
+      "createdAt": "2025-07-17T00:30:01.901Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_f7vkLSwqqS2wAUOmktWVrLzK",
+          "type": "function",
+          "function": {
+            "name": "generate_image",
+            "arguments": "{\"prompt\":\"A friendly and playful dog sitting in a grassy park. The dog has a shiny coat, wagging tail, and bright eyes, looking happy and energetic. The background features trees, flowers, and a clear blue sky, creating a cheerful and vibrant atmosphere.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "c81cf889-abd3-484a-9a25-799e7c591b8d",
+      "createdAt": "2025-07-17T00:30:03.213Z"
+    },
+    {
+      "role": "tool",
+      "content": "Error executing tool generate_image: 403 Project proj_KaxhJqbhpd21HkYeNoOu4BEL does not have access to model dall-e-3.",
+      "tool_call_id": "call_f7vkLSwqqS2wAUOmktWVrLzK",
+      "id": "38ccda51-5e6e-45e0-a367-2695822c3b43",
+      "createdAt": "2025-07-17T00:30:03.641Z"
+    },
+    {
+      "role": "assistant",
+      "content": "It appears that I'm currently unable to generate an image of a dog due to a technical limitation. However, I can help you brainstorm ideas for dog images or suggest where to find them online. If you have any specific requests or need assistance with something else, please let me know!",
+      "refusal": null,
+      "annotations": [],
+      "id": "4e04cdb6-1fd6-4772-8d83-cc99bb8dddf0",
+      "createdAt": "2025-07-17T00:30:04.711Z"
+    },
+    {
+      "role": "user",
+      "content": "generate an image of a sunset",
+      "id": "ffb3ba86-4385-4d72-bef5-92e987aae26f",
+      "createdAt": "2025-07-17T00:30:29.456Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_dheSvilmaT9VACnLXvKxtBDL",
+          "type": "function",
+          "function": {
+            "name": "generate_image",
+            "arguments": "{\"prompt\":\"A beautiful sunset over a calm ocean. The sky is filled with vibrant hues of orange, pink, and purple as the sun dips below the horizon. Silhouettes of palm trees are in the foreground, and gentle waves are lapping at the shore, creating a serene and picturesque scene.\"}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "ffec7a43-9cc0-4deb-b3c6-b1f18135c386",
+      "createdAt": "2025-07-17T00:30:31.168Z"
+    },
+    {
+      "role": "tool",
+      "content": "Error executing tool generate_image: 403 Project proj_KaxhJqbhpd21HkYeNoOu4BEL does not have access to model dall-e-2.",
+      "tool_call_id": "call_dheSvilmaT9VACnLXvKxtBDL",
+      "id": "2e5b24f1-31a9-4bce-9f21-f7c80f3f9060",
+      "createdAt": "2025-07-17T00:30:31.894Z"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems I'm currently unable to generate an image of a sunset due to a technical issue. However, you can find many beautiful sunset images online through stock photo websites or image search engines. If you have any other requests or need assistance with something else, feel free to let me know!",
+      "refusal": null,
+      "annotations": [],
+      "id": "8ff33952-a4e9-400a-bc09-95cf802091d9",
+      "createdAt": "2025-07-17T00:30:33.412Z"
     }
   ]
 }

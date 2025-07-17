@@ -21,14 +21,31 @@ export const generateImage: ToolFn<Args, string> = async ({
   toolArgs,
   userMessage,
 }) => {
-  const response = await openai.images.generate({
-    model: 'dall-e-3',
-    prompt: toolArgs.prompt,
-    n: 1,
-    size: '1024x1024',
-  })
-
-  const imageUrl = response.data[0].url!
-
-  return imageUrl
+  try {
+    // Try DALL-E 3 first
+    const response = await openai.images.generate({
+      model: 'dall-e-3',
+      prompt: toolArgs.prompt,
+      n: 1,
+      size: '1024x1024',
+    })
+    
+    const imageUrl = response.data[0].url!
+    return imageUrl
+  } catch (error: any) {
+    if (error.code === 'model_not_found' || error.status === 403) {
+      // Fall back to DALL-E 2 if DALL-E 3 is not available
+      console.log('DALL-E 3 not available, falling back to DALL-E 2')
+      const response = await openai.images.generate({
+        model: 'dall-e-2',
+        prompt: toolArgs.prompt,
+        n: 1,
+        size: '1024x1024',
+      })
+      
+      const imageUrl = response.data[0].url!
+      return imageUrl
+    }
+    throw error // Re-throw if it's a different error
+  }
 }
